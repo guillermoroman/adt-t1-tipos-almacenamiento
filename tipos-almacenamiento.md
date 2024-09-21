@@ -26,6 +26,8 @@ Además, la mayoría de usuarios (86 %) de esos países saben lo que es un backu
 
 ## Descripción del funcionamiento del sistema de almacenamiento
 
+[text](https://www.it.uc3m.es/pbasanta/asng/course_notes/data_modeling_data_storage_en.html)
+
 Para almacenar los datos en ficheros de forma persistente, una de las cuestiones a tener en cuenta es que se requiere utilizar ciertos métodos para poner una limitación sobre cuándo empieza un elemento y cuándo acaba este elemento, cuándo empieza un campo de datos y cuándo acaba este campo de datos, o cuándo no hay más elementos en un fichero. De este modo, por ejemplo, si se necesita almacenar una cadena de longitud indefinida, una posible solución sería añadir un campo adicional para indicar la longitud de la cadena (en bytes) en el fichero.
  
 La siguiente imagen muestra una forma de almacenar la información sobre fotos y autores en un único fichero. Podemos observar que inicialmente hay 4 bytes reservados para indicar en el fichero el número total de fotos que habrá almacenadas en el fichero, y a continuación estará la información de cada una de las fotos, incluyendo su información de autor. Para cada entero, habrá 4 bytes en el fichero para almacenarlo, pero habrá un campo adicional de 4 bytes para cada cadena que indicará la longitud en bytes de la cadena, para poder localizarla.
@@ -36,31 +38,41 @@ La elección para decidir una de las diferentes formas de almacenar la informaci
 
 ## Ventajas e inconvenientes
 
-### PROS
+### Ventajas
 
-1. Sencillez:
+1. **Sencillez**
 - Fácil de implementar: Leer y escribir en archivos puede ser sencillo y requiere una configuración mínima.
 - Sin software adicional: Puede utilizar el almacenamiento de archivos sin necesidad de un servidor de bases de datos.
-Rendimiento para conjuntos de datos pequeños:
+
+2. **Rendimiento para conjuntos de datos pequeños**
 - Acceso rápido a archivos pequeños: Para pequeñas cantidades de datos, la E/S de archivos puede ser bastante rápida, especialmente si los datos ya están en memoria.
-Portabilidad:
+
+3. **Portabilidad**
 - Fácil de trasladar: los archivos pueden copiarse, trasladarse o compartirse fácilmente entre sistemas.
-Coste:
+
+4. **Coste**
 - Sin costes de licencia: El uso del sistema de archivos evita los costes asociados a las licencias de bases de datos o a los servicios de bases de datos alojadas.
-Menos gastos generales:
+
+5. **Menos gastos generales**
 - Uso mínimo de recursos: Se puede acceder a los archivos con menos sobrecarga que con un sistema de gestión de bases de datos.
 
-2. Escalabilidad:
+### Desventajas
+
+1. **Escalabilidad**
 - Degradación del rendimiento: A medida que crece la cantidad de datos, el acceso a los archivos puede volverse más lento y menos eficiente.
 - Dificultad para gestionar grandes conjuntos de datos: La búsqueda y gestión de archivos de gran tamaño puede resultar engorrosa.
-Problemas de concurrencia:
+
+2. **Problemas de concurrencia**
 - Acceso concurrente limitado: Manejar múltiples operaciones de lectura/escritura simultáneamente puede llevar a la corrupción de datos o inconsistencias.
-Falta de funciones avanzadas:
+
+3. **Falta de funciones avanzadas**
 - Sin indexación integrada: La búsqueda en archivos puede ser lenta sin mecanismos de indexación.
 - Sin transacciones: Los ficheros no admiten transacciones, lo que hace más difícil garantizar la integridad de los datos.
-Redundancia de datos:
+
+4. **Redundancia de datos**
 - Aumento de la duplicación: Sin un esquema estructurado, es fácil crear datos redundantes en diferentes archivos.
-Copias de seguridad y recuperación:
+
+5. **Copias de seguridad y recuperación**
 - Procesos manuales: Las copias de seguridad y la recuperación de datos de archivos pueden ser más complejas y menos fiables en comparación con las bases de datos.
 
 ## Usos
