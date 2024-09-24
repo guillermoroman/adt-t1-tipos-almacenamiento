@@ -564,3 +564,69 @@ Los sistemas de almacenamiento XML no son bases de datos relacionales tradiciona
 2. Servicios Web.
  
 3. Sindicadores de contenido: Los archivos RSS (Rich Site Summary) o Atom, que son versiones especializadas de XML, se utilizan para sindicar contenido. Plataformas de noticias, como BBC News, y blogs utilizan RSS en XML para actualizar a sus usuarios sobre contenido nuevo.
+
+
+
+## Bases de Datos Relacionales
+
+### Autores
+* Sergio Martínez Castaño
+* Pablo Couce García
+
+### Introducción y Origen
+
+Las bases de datos relacionales surgieron en los años setenta, concebidas para resolver una necesidad clave: la gestión de datos tabulares, como aquellos provenientes de formularios en papel, a los que se pudiesen aplicar operaciones estructuradas. Su creación marcó un hito en la administración de información, permitiendo organizarla de forma eficiente y lógica.
+
+### Nivel de Adopción
+
+Hoy en día, las bases de datos relacionales son una de las tecnologías más utilizadas en las empresas debido a su modelo relacional, el cual facilita la estructuración y consulta de grandes volúmenes de datos. Han demostrado ser confiables y flexibles, ganándose un lugar fundamental en la infraestructura tecnológica empresarial.
+
+### Funcionamiento del Sistema de Almacenamiento
+
+Una base de datos relacional organiza la información en **tablas**, donde los **datos se almacenan en filas y columnas**. Estas tablas pueden establecer **vínculos** entre sí mediante claves, permitiendo la creación de relaciones lógicas entre diferentes conjuntos de datos. Este enfoque facilita la generación de estadísticas, la comparación de datos y su análisis, simplificando la forma en que se gestionan grandes cantidades de información.
+
+### Ventajas e Inconvenientes
+
+#### Ventajas
+- **Simplicidad en la manipulación de datos**: Es sencillo crear, editar o ampliar la base de datos sin afectar las aplicaciones que dependen de ella.
+- **Uniformidad de los datos**: El modelo relacional asegura que los datos sean coherentes y consistentes a lo largo del tiempo.
+- **Facilidad de uso y rendimiento**: A pesar de la complejidad inherente a las bases de datos, ofrecen herramientas amigables para el usuario que permiten administrarlas eficientemente.
+
+#### Inconvenientes
+- **Costes de mantenimiento**: Mantener una base de datos relacional puede implicar altos costos, especialmente a medida que crecen en tamaño y complejidad.
+- **Problemas de espacio**: Un incremento significativo en el volumen de datos puede llevar a limitaciones en el almacenamiento.
+- **Complejidad de aprendizaje**: Aunque son poderosas, su uso avanzado puede requerir un conocimiento técnico considerable, lo que representa una curva de aprendizaje pronunciada para algunos usuarios.
+
+### Usos de las Bases de Datos Relacionales
+
+Las bases de datos relacionales tienen una variedad de aplicaciones en múltiples sectores. Entre sus usos más comunes se incluyen:
+
+- **Gestión de inventarios**: Permiten a las empresas minoristas rastrear productos, proveedores y niveles de stock de manera efectiva.
+- **Procesamiento de transacciones de comercio electrónico**: Ayudan a gestionar grandes volúmenes de información sobre productos y transacciones en plataformas de ventas.
+- **Administración de información de clientes**: Se utilizan para gestionar cantidades masivas de datos relacionados con los clientes, como en el sector bancario o de seguros.
+
+### Tipos de Bases de Datos Relacionales
+
+Existen varias plataformas de bases de datos relacionales populares en el mercado. Entre las más destacadas se encuentran:
+
+- **SQL Server**
+- **Azure SQL Managed Instance**
+- **Azure SQL Database**
+- **MySQL**
+- **PostgreSQL**
+- **MariaDB**
+
+### Casos de Uso Reales
+
+#### Caso 1: Industrias Minoristas – Gestión de Inventario
+Las industrias minoristas utilizan bases de datos relacionales para gestionar la información de productos, categorías, proveedores, niveles de inventario y transacciones de ventas. Esta organización de datos facilita el seguimiento y optimización de los recursos.
+
+#### Caso 2: Atención Médica – Registros Médicos Electrónicos
+En el sector sanitario, los hospitales y clínicas emplean bases de datos relacionales para almacenar registros médicos electrónicos. Estos sistemas garantizan la precisión, seguridad y accesibilidad de los datos de los pacientes, elementos críticos para la toma de decisiones y la calidad del servicio.
+
+#### Caso 3: Finanzas – Sistemas Bancarios y Comerciales
+En el ámbito financiero, los bancos y otras instituciones utilizan bases de datos relacionales para manejar conjuntos de datos complejos, garantizando la integridad de la información y soportando operaciones de transacciones críticas, como la gestión de cuentas y transferencias.
+
+### Conclusión
+
+Las bases de datos relacionales son una tecnología fundamental en la gestión de información moderna. Su flexibilidad, capacidad de relación entre datos y facilidad de uso las han convertido en la herramienta preferida en numerosos sectores. Sin embargo, es importante considerar sus limitaciones, como los costes y la complejidad técnica, al planificar su adopción.
