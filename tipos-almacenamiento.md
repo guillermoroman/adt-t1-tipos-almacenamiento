@@ -288,6 +288,7 @@ Blizzard Entertainment utiliza MongoDB para almacenar datos de los jugadores, co
 
 Netflix emplea Cassandra para almacenar datos de usuarios, como historial de visualización, calificaciones y recomendaciones. También utiliza Elasticsearch para realizar búsquedas de contenido.
 
+
 ## TAREA 1 | TEMA DEL GRUPO | BASE DE DATOS DE OBJETOS
  
 ### Autores: 
